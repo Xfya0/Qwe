@@ -1,4 +1,4 @@
 print("hello world")
-input()
-if input ==5:
+q=int(input())
+if q==5:
     print("nice")
