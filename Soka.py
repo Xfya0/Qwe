@@ -1,5 +1,5 @@
-def convert_to_custom_format(character):
-    # تحويل الحرف/الحروف إلى صيغة النص المخصصة
+def convert_to_custom_format(character, write_side_by_side=False):
+    # كود تحويل الحروف إلى الصيغة المخصصة
     alphabet = {
         'a': ["  ___  ",
               " / _ \\ ",
