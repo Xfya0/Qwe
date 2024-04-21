@@ -154,4 +154,4 @@ def convert_to_custom_format(character, write_side_by_side=False):
     lines = [" ".join(row) for row in zipped_characters]
 
 # دمج جميع السلاسل مع إضافة فواصل بين الأسطر لإنشاء النص النهائي
-return "\n".join(lines)
+    return "\n".join(lines)
