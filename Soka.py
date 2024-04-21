@@ -1,4 +1,5 @@
-alphabet = {
+def convert_to_custom_format(character):
+  alphabet = {
       'a': ["  ___  ",
             " / _ \\ ",
             "| | | |",
