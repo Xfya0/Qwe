@@ -20,7 +20,7 @@ def check_username(username):
         return f"حدث خطأ أثناء محاولة فحص اسم المستخدم '{username}': {e}"
 
 def main():
-    with open('usernames.txt', 'r', encoding='utf-8') as file:
+    with open('username.txt', 'r', encoding='utf-8') as file:
         usernames = file.readlines()
     
     usernames = [username.strip() for username in usernames]
@@ -29,7 +29,7 @@ def main():
     for username in usernames:
         result = check_username(username)
         results.append(result)
-        time.sleep(2)  # الانتظار لمدة 2 ثانية بين الطلبات لتجنب الحظر
+        time.sleep(0.67)  # الانتظار لمدة 2 ثانية بين الطلبات لتجنب الحظر
     
     with open('results.txt', 'w', encoding='utf-8') as result_file:
         for result in results:
