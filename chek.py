@@ -29,7 +29,7 @@ def main():
     for username in usernames:
         result = check_username(username)
         results.append(result)
-        time.sleep(2)  # الانتظار لمدة 2 ثانية بين الطلبات لتجنب الحظر
+        #time.sleep(2)  # الانتظار لمدة 2 ثانية بين الطلبات لتجنب الحظر
     
     with open('results.txt', 'w', encoding='utf-8') as result_file:
         for result in results:
