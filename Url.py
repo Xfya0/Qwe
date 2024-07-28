@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 url = 'https://tgchana.site/tme'
 
@@ -9,9 +10,12 @@ try:
 
     soup = BeautifulSoup(response.content, 'html.parser')
 
+    pattern = re.compile(r'^https://tgchana\.site/tme:.+')
     links = []
     for link in soup.find_all('a', href=True):
-        links.append(link['href'])
+        href = link['href']
+        if pattern.match(href):
+            links.append(href)
 
     for link in links:
         print(link)
